@@ -92,8 +92,6 @@ function install_dotfiles
 			or abort 'failed to link config file'
 	end
 
-	link_file $DOTFILES_ROOT/fisher/plugins $__fish_config_dir/fish_plugins backup
-		or abort plugins
 	link_file $DOTFILES_ROOT/bat/config $HOME/.config/bat/config backup
 		or abort bat
 	link_file $DOTFILES_ROOT/htop/htoprc $HOME/.config/htop/htoprc backup
@@ -104,10 +102,6 @@ function install_dotfiles
 		or abort kitty
 end
 
-curl -sL git.io/fisher | source && fisher install jorgebucaran/fisher
-	and success 'fisher'
-	or abort 'fisher'
-
 setup_gitconfig
 	and success 'gitconfig'
 	or abort 'gitconfig'
@@ -115,10 +109,6 @@ setup_gitconfig
 install_dotfiles
 	and success 'dotfiles'
 	or abort 'dotfiles'
-
-fisher update
-	and success 'plugins'
-	or abort 'plugins'
 
 mkdir -p ~/.config/fish/completions/
 	and success 'completions'

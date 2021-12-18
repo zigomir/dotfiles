@@ -1,0 +1,13 @@
+[user]
+	name = ziga
+	email = zigomir@gmail.com
+[include]
+	path = /Users/ziga/.gitconfig.local
+[dotfiles]
+	managed = true
+[credential]
+	helper = osxkeychain
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = "code --wait "

@@ -1,11 +1,3 @@
-<p align="center">
-  <img alt="header image" src="https://raw.githubusercontent.com/caarlos0/dotfiles.fish/master/docs/header.svg" height="350" />
-  <h2 align="center">carlos' dotfiles</h2>
-  <p align="center">Config files for Fish, Java, Ruby, Go, Editors, Terminals and more.</p>
-</p>
-
----
-
 Forked from my [ZSH dotfiles](https://github.com/caarlos0/dotfiles), those are
 my Fish Shell config files, together with editor, macOS configs and other
 goodies.
@@ -82,36 +74,6 @@ $ fd -e backup -e local -H -E Library -d 3 .
 
 And then manually inspect/revert them.
 
-## Recommended Software
-
-For macOS, I recommend:
-
-- iTerm: a better terminal emulator;
-
-For both Linux and macOS:
-
-- [`delta`](https://github.com/dandavison/delta) for better git diffs;
-- [`fd`](https://github.com/sharkdp/fd) a simple, fast and user-friendly alternative to `find`;
-- [`fzf`](https://github.com/junegunn/fzf) for a fuzzy-finder, used in `,t` on vim, for example;
-- [`gh`](https://github.com/cli/cli) for more GitHub integration with the terminal;
-- [`grc`](https://github.com/garabik/grc) to colorize command's outputs;
-- [`starship.rs`](https://starship.rs) the shell we are using;
-- [`kubectx`](https://github.com/ahmetb/kubectx) for better Kubernetes context and namespace switch;
-- [`zoxide`](https://github.com/ajeetdsouza/zoxide) a smarter `cd` command;
-
-To install them all with `brew`:
-
-```console
-$ brew install fish git-delta fzf gh grc kubectx starship zoxide
-```
-
-On Ubuntu:
-
-```console
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
-sudo apt install fish grc fzf zoxide
-```
-
 ## macOS defaults
 
 You use it by running:
@@ -121,17 +83,3 @@ You use it by running:
 ```
 
 And logging out and in again or restart.
-
-## Themes and fonts being used
-
-Theme is **[Dracula](https://draculatheme.com)** and font is **Inconsolata**
-Nerd Font.
-
-## Screenshots
-
-![screenshot 1][scrn1]
-
-![screenshot 2][scrn2]
-
-[scrn1]: /docs/screenshot1.png
-[scrn2]: /docs/screenshot2.png
