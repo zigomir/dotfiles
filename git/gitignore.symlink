@@ -1,2 +1,8 @@
 .DS_Store
 .idea
+
+# work specific
+Caddyfile
+playground.py
+dev/pipenv/Dockerfile
+dev_build_detection_stress_test.py
