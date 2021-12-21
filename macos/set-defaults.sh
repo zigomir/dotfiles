@@ -124,14 +124,14 @@ defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 echo "  › Show status bar"
 defaults write com.apple.finder ShowStatusBar -bool true
 
-echo "  › Show path bar"
-defaults write com.apple.finder ShowPathbar -bool true
+# echo "  › Show path bar"
+# defaults write com.apple.finder ShowPathbar -bool true
 
 echo "  › Disable the warning before emptying the Trash"
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
-echo "  › Save to disk by default, instead of iCloud"
-defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+# echo "  › Save to disk by default, instead of iCloud"
+# defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 echo "  › Display full POSIX path as Finder window title"
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
