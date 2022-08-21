@@ -8,6 +8,9 @@
 # More from:
 #    https://gist.github.com/brandonb927/3195465
 #
+# Another good reference .macos dotfiles:
+# https://github.com/lucasfcosta/dotfiles/blob/master/.macos
+#
 # Run ./set-defaults.sh and you'll be good to go.
 if [ "$(uname -s)" != "Darwin" ]; then
 	exit 0
