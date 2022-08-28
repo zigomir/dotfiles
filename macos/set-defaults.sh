@@ -113,7 +113,7 @@ echo ""
 echo "› Finder:"
 
 # Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
-defaults write com.apple.finder QuitMenuItem -bool true
+# defaults write com.apple.finder QuitMenuItem -bool true
 
 echo "  › Always open everything in Finder's list view"
 defaults write com.apple.Finder FXPreferredViewStyle Nlsv
