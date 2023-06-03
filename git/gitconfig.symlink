@@ -1,6 +1,7 @@
 [user]
 	name = ziga
 	email = zigomir@gmail.com
+	signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCtUZLtkbYxV+HcNsDbubBgxb8vvxXTIPDYwJtjTd+s1DhAmgrRvM60XmHOtWQMvQgAR1+/q76KhZBSvQA4JvMQoKWv9COnsce5JtEinI6bBgdHmchDxB20UnsXIdBwWW/eJmAITSRdNO4loUTnwH3K1h05mdgpYevvun6+Knmp4+41lMywaCcAFezoHW1AAV+QJWS8i059vdbH1WzJL3CV+qR/eSsE3g3R6KaiqKwhtziehF/kOELeY3e8NxZPcckaSbXS9bfvPEgYUHZIlX80F5YKDbw3/mucK7UpAY9UgDhN/iVHcqv2aQKfwmRCysCVVzn9IvfCkIsubF1lvVrLHCOlHpY6ZfwsDFcpIkw4g2LgzJ4fkNXOjL7oVtNKV4J0cINwLzZ+vAmD/HARlRVo4ceLG8MZIbMzFlJV38zp+4+QFjNL2Qnl3aDfvp1ledGTTZA8ZaxBJLrCU/w5vxDF8DmR50GgVvjWkFRS7RQ5jIiVQ4lPrBcb+eDoqtDLhUEzxgsdrD6jXALE54NSSPNHB+QqiVy9aCZL/k60/aQappLRjSYSzECpSczxTjyzkx533QTGFFi07zUnIiH6Gw1+vDEBeAHoWQw87MVDbQQnIObIAJDZzO8Q5hRHrI/cvNIG3k/mpY/Nln/fpVSyvAWLwZXCY2tH//+qReOBCNV4hQ==
 [include]
 	path = /Users/ziga/.gitconfig.local
 [dotfiles]
@@ -11,3 +12,14 @@
 	tool = vscode
 [mergetool "vscode"]
 	cmd = "code --wait "
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
